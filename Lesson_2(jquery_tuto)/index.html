@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Tuto</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron nav">
+          <h1>Let's Have Fun!</h1>
+          <button class="btn btn-default">#btn1</button>
+          <button class="btn btn-default">#btn2</button>
+          <button class="btn btn-default">#btn3</button>
+          <button class="btn btn-default">#btn4</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="col-md-3 col-sm-3 col-xs-3">
+            <div id="panel1" class="panel panel-primary">
+                <div class="panel-heading">#panel1</div>
+                <div class="panel-body">content</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+            <div id="panel2" class="panel panel-primary">
+                    <div class="panel-heading">#panel2</div>
+                    <div class="panel-body">content</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+            <div id="panel3" class="panel panel-primary">
+                    <div class="panel-heading">#panel3</div>
+                    <div class="panel-body">content</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+            <div id="panel4" class="panel panel-primary">
+                <div class="panel-heading">#panel4</div>
+                <div class="panel-body">content</div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script>
+       $(function(){
+           
+           $("#panel1").slideUp(1000).delay(1000).slideDown(1000);
+           $("#panel2").fadeToggle(1000).fadeToggle(1000);
+           $("#panel3").css({
+               color:'red',
+               fontWeight:'bold',
+               display:'none'
+               });
+            $("#panel4").css({opacity:'0.5'});
+       });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

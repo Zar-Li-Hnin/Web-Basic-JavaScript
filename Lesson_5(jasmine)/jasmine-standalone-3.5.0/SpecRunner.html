@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v3.5.0</title>
+
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine-3.5.0/jasmine_favicon.png">
+  <link rel="stylesheet" href="lib/jasmine-3.5.0/jasmine.css">
+
+  <script src="lib/jasmine-3.5.0/jasmine.js"></script>
+  <script src="lib/jasmine-3.5.0/jasmine-html.js"></script>
+  <script src="lib/jasmine-3.5.0/boot.js"></script>
+
+  <!-- include source files here... -->
+  <script src="src/Player.js"></script>
+  <script src="src/Song.js"></script>
+
+  <!-- include spec files here... -->
+  <script src="spec/SpecHelper.js"></script>
+  <script src="spec/PlayerSpec.js"></script>
+
+  <script>
+    
+    function getOpposite(bool){
+      return !bool;
+    }
+    function add(x,y){
+      return x+y;
+    }
+    function minus(x,y){
+      return x-y;
+    }
+    describe ('Math Functions', ()=>{
+      let num1;
+      let num2;
+
+      beforeEach(()=>{
+        num1=2;
+        num2=3;
+      });
+      it('Gets the Sum of 2 numbers', () =>{
+        //arrange
+        // const num1=2;
+        // const num2=3;
+
+        //act
+        const result=add(num1,num2);
+
+        //assert
+        expect(result).toBe(5);
+      });
+      it('Returns subtracted value', () =>{
+        //arrange
+        // const num1=2;
+        // const num2=3;
+
+        //act
+        const result=minus(num1,num2);
+
+        //assert
+        expect(result).toBe(-1);
+      });
+    });
+    
+    describe ('Write Your TEst Grup Description Here', () =>{
+      it ('Write Your Test Expetation Here',()=>{
+        //arrange
+        let bool= false;
+        
+        //act
+        const result=getOpposite(bool);
+
+        //assert
+        expect(result).toBe(true);
+      });
+    });
+   
+  </script>
+  
+
+</head>
+
+<body>
+</body>
+</html>
